@@ -1,0 +1,215 @@
+/* main background colour #E5E5E5 */
+/* footer background colour #2F303A */
+/* main <h> colour #212121 */
+/* main text colour #757575 */
+/* accent color #2196F3 */
+:root {
+  --accent-background: #2f303a;
+  --secondary-background: #f5f4fa;
+
+  --primary-font-family: 'Roboto', sans-serif;
+
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --title-color: #212121;
+  --secondary-title-color: #ffffff;
+
+  --footer-contaks-color: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font-family);
+}
+/* base styles */
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* button */
+
+button {
+  background-color: #f5f4fa;
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+button:hover,
+button:focus,
+button.active {
+  background-color: var(--accent-color);
+  color: var(--secondary-title-color);
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+/* header */
+.logo {
+  color: #212121;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo span {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+nav a {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-links a {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+nav a:hover,
+nav a:focus,
+nav a.active,
+.contact-links a:hover,
+.contact-links a:focus {
+  color: var(--accent-color);
+}
+/* hero styles */
+
+.hero {
+  background-color: var(--accent-background);
+  text-align: center;
+}
+
+/* quality */
+
+/* team */
+.team {
+  text-align: center;
+  background-color: var(--secondary-background);
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* works */
+
+.works p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.works a {
+  color: var(--title-color);
+}
+/* footer */
+footer {
+  background-color: var(--accent-background);
+  font-family: var(--primary-font-family);
+}
+footer .logo {
+  color: var(--secondary-title-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+footer .logo span {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+footer address {
+  font-style: normal;
+}
+footer span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+footer a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-contaks-color);
+}
