@@ -33,6 +33,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 h2,
 h3,
@@ -108,11 +109,30 @@ button.active {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
 }
 
 /* header */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid green;
+}
+
+header {
+  background-color: #ffffff;
+}
 .logo {
   color: #212121;
   font-weight: 700;
