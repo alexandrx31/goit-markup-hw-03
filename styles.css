@@ -69,6 +69,7 @@ h5 {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 p {
@@ -121,13 +122,16 @@ button.active {
 
 /* header */
 
+.header-nav {
+  display: flex;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  border: solid green;
 }
 
 header {
@@ -175,6 +179,10 @@ nav a.active,
 }
 
 /* quality */
+.quality {
+  padding-top: 94px;
+  border: 2px solid coral;
+}
 
 /* team */
 .team {
