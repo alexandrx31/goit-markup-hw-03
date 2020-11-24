@@ -126,6 +126,23 @@ button.active {
   display: flex;
 }
 
+/* proba */
+
+.header-nav .header-list {
+  outline: 1px solid blue;
+  margin-right: 50px;
+}
+
+.header-list:last-child {
+  margin-right: 0px;
+}
+.header-list a {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+/* proba */
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -171,6 +188,14 @@ nav a.active,
 .contact-links a:focus {
   color: var(--accent-color);
 }
+
+.contact-links {
+  display: flex;
+}
+.contact-links .header-list + .header-list {
+  margin-left: 50px;
+}
+
 /* hero styles */
 
 .hero {
