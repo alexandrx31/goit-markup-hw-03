@@ -25,6 +25,19 @@
 body {
   font-family: var(--primary-font-family);
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* base styles */
 h1 {
   font-weight: 900;
@@ -122,38 +135,16 @@ button.active {
 
 /* header */
 
-.header-nav {
-  display: flex;
-}
-
-/* proba */
-
-.header-nav .header-list {
-  outline: 1px solid blue;
-  margin-right: 50px;
-}
-
-.header-list:last-child {
-  margin-right: 0px;
-}
-.header-list a {
-  display: block;
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-/* proba */
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 header {
   background-color: #ffffff;
+  padding: 26px 0px 24px;
 }
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: #212121;
   font-weight: 700;
@@ -174,6 +165,20 @@ nav a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.header-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-links li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-links a {
   color: #757575;
   font-weight: 500;
@@ -192,21 +197,52 @@ nav a.active,
 .contact-links {
   display: flex;
 }
-.contact-links .header-list + .header-list {
-  margin-left: 50px;
-}
 
 /* hero styles */
 
 .hero {
   background-color: var(--accent-background);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero .container {
+  flex-direction: column;
 }
 
 /* quality */
 .quality {
   padding-top: 94px;
-  border: 2px solid coral;
+  padding-bottom: 47px;
+}
+
+.quality ul {
+  display: flex;
+}
+.quality li {
+  width: 270px;
+}
+.quality li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* what-we-do */
+.what-we-do {
+  padding-bottom: 94px;
+  padding-top: 47px;
+}
+
+.what-we-do .container {
+  flex-direction: column;
+}
+.what-we-do h2 {
+  margin-bottom: 50px;
+}
+.what-we-do ul {
+  display: flex;
+}
+.what-we-do li:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
 }
 
 /* team */
